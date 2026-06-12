@@ -1,0 +1,42 @@
+/* html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.leaflet-container {
+  height: 100% !important;
+  width: 100% !important;
+  display: block;
+  background-color: #ddd;
+} */
+/* src/index.css */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Page scroll na ho */
+}
+
+/* Map ko screen par force karne ke liye */
+.leaflet-container {
+  height: 100% !important;
+  width: 100% !important;
+  z-index: 1;
+  background-color: #f0f0f0; /* Jab tak tiles load na ho gray dikhega */
+}
+
+/* Scrollbar layout logs ke liye */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
