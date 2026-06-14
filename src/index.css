@@ -39,3 +39,6 @@ body,
   background: #ccc;
   border-radius: 10px;
 }
+.custom-vehicle-icon svg {
+  fill: #58a6ff !important;
+}
